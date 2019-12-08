@@ -26,10 +26,22 @@ class BookController extends Controller {
     $searchModel = new BookSearch();
     $dataProvider = $searchModel->search(Yii::$app->request->$queryParams);
 
-    return $this->render('index', [
-      'searchModel' => $searchModel,
-      'dataProvider' => $dataProvider,
-    ]);
+    // return $this->render('index', [
+    //   'searchModel' => $searchModel,
+    //   'dataProvider' => $dataProvider,
+    // ]);
+
+    // 页面渲染改为输出JSON数据接口
+    // $response = Yii::$app->response;
+    // $response->format = \yii\web\Response::FORMAT_JSON;
+    // $response->data = ['data' => $dataProvider->getModels()];
+
+    // https://stackoverflow.com/questions/38483794/yii2-how-to-return-json-using-dataprovider
+    \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+    return $dataProvider->getModels();
+    // return $dataProvider->getKeys();
+    // return $dataProvider->getCount();
+    // return $dataProvider->getTotalCount();
   }
 
   public function actionView($id) {
