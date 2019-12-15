@@ -9,7 +9,7 @@ export default class BooksController {
     })
     console.log('books list===', result)
     const html = await ctx.render('book/list', {
-      data: result
+      data: result.data
     })
     ctx.body = html
   }

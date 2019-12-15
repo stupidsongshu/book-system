@@ -10,8 +10,8 @@
   this is list
 
   <ul>
-    {% for index, item in data.list %}
-      <li>{{item.name}}</li>
+    {% for index, item in data %}
+      <li>{{index}}: {{item.name}}</li>
     {% endfor %}
   </ul>
 </body>
