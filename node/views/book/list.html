@@ -14,5 +14,24 @@
       <li>{{index}}: {{item.name}}</li>
     {% endfor %}
   </ul>
+
+  <table border="1" cellspacing=0 cellpadding=5>
+    <tr>
+      <td>id</td>
+      <td>name</td>
+      <td>author</td>
+      <td>isbn</td>
+      <td>price</td>
+    </tr>
+    {% for item in data %}
+    <tr>
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.author}}</td>
+      <td>{{item.isbn}}</td>
+      <td>{{item.price}}</td>
+    </tr>
+    {% endfor %}
+  </table>
 </body>
 </html>

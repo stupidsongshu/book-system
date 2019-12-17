@@ -14,18 +14,18 @@ class SafeRequest {
 		}
 		return new Promise((resolve, reject) => {
 			let myfetch = fetch(this.baseUrl + this.url);
-			console.log("🍊🍊🍊🍊🍊", this.baseUrl + this.url);
+			console.log("✅", this.baseUrl + this.url);
 			myfetch
 				.then(res => res.json())
 				.then((json) => {
-					console.log("🍊🍊🍊🍊🍊fetch success:", json)
+					console.log("✅fetch success:", json)
 					result.data = json;
 					resolve(result);
 				}).catch((error) => {
-					console.log("🍊🍊🍊🍊🍊fetch error:", error);
+					console.log("❎fetch error:", error);
 					result.code = 1;
 					result.message = "❎node-fetch请求数据失败";
-					result.error = error
+					result.data = error
 					reject(result)
 				})
 		})

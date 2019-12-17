@@ -7,7 +7,8 @@ const errorHandler = {
         // console.log(e)
         logger.error(e)
         ctx.status = 500
-        ctx.body = '服务器开小差'
+        // ctx.body = '服务器开小差'
+        ctx.body = e
       }
       switch(ctx.status) {
         case 301:
