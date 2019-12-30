@@ -1,0 +1,174 @@
+[2019-12-30T14:19:58.628] [ERROR] cheese - [Error: ENOENT: no such file or directory, open '/Users/maigit/fe/squirrel/book-system/node-fe/src/web/views/index.html'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/maigit/fe/squirrel/book-system/node-fe/src/web/views/index.html'
+}
+[2019-12-30T14:20:57.961] [ERROR] cheese - {
+  code: 1,
+  message: '❎node-fetch请求数据失败',
+  data: FetchError: request to http://localhost:8888/book/index failed, reason: connect ECONNREFUSED 127.0.0.1:8888
+      at ClientRequest.<anonymous> (/Users/maigit/fe/squirrel/book-system/node-fe/node_modules/node-fetch/lib/index.js:1455:11)
+      at ClientRequest.emit (events.js:200:13)
+      at ClientRequest.EventEmitter.emit (domain.js:471:20)
+      at Socket.socketErrorListener (_http_client.js:402:9)
+      at Socket.emit (events.js:200:13)
+      at Socket.EventEmitter.emit (domain.js:471:20)
+      at emitErrorNT (internal/streams/destroy.js:91:8)
+      at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+      at processTicksAndRejections (internal/process/task_queues.js:84:9) {
+    message: 'request to http://localhost:8888/book/index ' +
+      'failed, reason: connect ECONNREFUSED ' +
+      '127.0.0.1:8888',
+    type: 'system',
+    errno: 'ECONNREFUSED',
+    code: 'ECONNREFUSED'
+  }
+}
+[2019-12-30T14:22:11.252] [ERROR] cheese - {
+  code: 1,
+  message: '❎node-fetch请求数据失败',
+  data: FetchError: request to http://localhost:8888/book/index failed, reason: connect ECONNREFUSED 127.0.0.1:8888
+      at ClientRequest.<anonymous> (/Users/maigit/fe/squirrel/book-system/node-fe/node_modules/node-fetch/lib/index.js:1455:11)
+      at ClientRequest.emit (events.js:200:13)
+      at ClientRequest.EventEmitter.emit (domain.js:471:20)
+      at Socket.socketErrorListener (_http_client.js:402:9)
+      at Socket.emit (events.js:200:13)
+      at Socket.EventEmitter.emit (domain.js:471:20)
+      at emitErrorNT (internal/streams/destroy.js:91:8)
+      at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+      at processTicksAndRejections (internal/process/task_queues.js:84:9) {
+    message: 'request to http://localhost:8888/book/index ' +
+      'failed, reason: connect ECONNREFUSED ' +
+      '127.0.0.1:8888',
+    type: 'system',
+    errno: 'ECONNREFUSED',
+    code: 'ECONNREFUSED'
+  }
+}
+[2019-12-30T14:22:14.177] [ERROR] cheese - {
+  code: 1,
+  message: '❎node-fetch请求数据失败',
+  data: FetchError: request to http://localhost:8888/book/index failed, reason: connect ECONNREFUSED 127.0.0.1:8888
+      at ClientRequest.<anonymous> (/Users/maigit/fe/squirrel/book-system/node-fe/node_modules/node-fetch/lib/index.js:1455:11)
+      at ClientRequest.emit (events.js:200:13)
+      at ClientRequest.EventEmitter.emit (domain.js:471:20)
+      at Socket.socketErrorListener (_http_client.js:402:9)
+      at Socket.emit (events.js:200:13)
+      at Socket.EventEmitter.emit (domain.js:471:20)
+      at emitErrorNT (internal/streams/destroy.js:91:8)
+      at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+      at processTicksAndRejections (internal/process/task_queues.js:84:9) {
+    message: 'request to http://localhost:8888/book/index ' +
+      'failed, reason: connect ECONNREFUSED ' +
+      '127.0.0.1:8888',
+    type: 'system',
+    errno: 'ECONNREFUSED',
+    code: 'ECONNREFUSED'
+  }
+}
+[2019-12-30T14:22:15.078] [ERROR] cheese - {
+  code: 1,
+  message: '❎node-fetch请求数据失败',
+  data: FetchError: request to http://localhost:8888/book/index failed, reason: connect ECONNREFUSED 127.0.0.1:8888
+      at ClientRequest.<anonymous> (/Users/maigit/fe/squirrel/book-system/node-fe/node_modules/node-fetch/lib/index.js:1455:11)
+      at ClientRequest.emit (events.js:200:13)
+      at ClientRequest.EventEmitter.emit (domain.js:471:20)
+      at Socket.socketErrorListener (_http_client.js:402:9)
+      at Socket.emit (events.js:200:13)
+      at Socket.EventEmitter.emit (domain.js:471:20)
+      at emitErrorNT (internal/streams/destroy.js:91:8)
+      at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+      at processTicksAndRejections (internal/process/task_queues.js:84:9) {
+    message: 'request to http://localhost:8888/book/index ' +
+      'failed, reason: connect ECONNREFUSED ' +
+      '127.0.0.1:8888',
+    type: 'system',
+    errno: 'ECONNREFUSED',
+    code: 'ECONNREFUSED'
+  }
+}
+[2019-12-30T14:22:17.222] [ERROR] cheese - {
+  code: 1,
+  message: '❎node-fetch请求数据失败',
+  data: FetchError: request to http://localhost:8888/book/index failed, reason: connect ECONNREFUSED 127.0.0.1:8888
+      at ClientRequest.<anonymous> (/Users/maigit/fe/squirrel/book-system/node-fe/node_modules/node-fetch/lib/index.js:1455:11)
+      at ClientRequest.emit (events.js:200:13)
+      at ClientRequest.EventEmitter.emit (domain.js:471:20)
+      at Socket.socketErrorListener (_http_client.js:402:9)
+      at Socket.emit (events.js:200:13)
+      at Socket.EventEmitter.emit (domain.js:471:20)
+      at emitErrorNT (internal/streams/destroy.js:91:8)
+      at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+      at processTicksAndRejections (internal/process/task_queues.js:84:9) {
+    message: 'request to http://localhost:8888/book/index ' +
+      'failed, reason: connect ECONNREFUSED ' +
+      '127.0.0.1:8888',
+    type: 'system',
+    errno: 'ECONNREFUSED',
+    code: 'ECONNREFUSED'
+  }
+}
+[2019-12-30T14:23:22.255] [ERROR] cheese - {
+  code: 1,
+  message: '❎node-fetch请求数据失败',
+  data: FetchError: request to http://localhost:8888/book/index failed, reason: connect ECONNREFUSED 127.0.0.1:8888
+      at ClientRequest.<anonymous> (/Users/maigit/fe/squirrel/book-system/node-fe/node_modules/node-fetch/lib/index.js:1455:11)
+      at ClientRequest.emit (events.js:200:13)
+      at ClientRequest.EventEmitter.emit (domain.js:471:20)
+      at Socket.socketErrorListener (_http_client.js:402:9)
+      at Socket.emit (events.js:200:13)
+      at Socket.EventEmitter.emit (domain.js:471:20)
+      at emitErrorNT (internal/streams/destroy.js:91:8)
+      at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+      at processTicksAndRejections (internal/process/task_queues.js:84:9) {
+    message: 'request to http://localhost:8888/book/index ' +
+      'failed, reason: connect ECONNREFUSED ' +
+      '127.0.0.1:8888',
+    type: 'system',
+    errno: 'ECONNREFUSED',
+    code: 'ECONNREFUSED'
+  }
+}
+[2019-12-30T14:23:39.162] [ERROR] cheese - {
+  code: 1,
+  message: '❎node-fetch请求数据失败',
+  data: FetchError: request to http://localhost:8888/book/index failed, reason: connect ECONNREFUSED 127.0.0.1:8888
+      at ClientRequest.<anonymous> (/Users/maigit/fe/squirrel/book-system/node-fe/node_modules/node-fetch/lib/index.js:1455:11)
+      at ClientRequest.emit (events.js:200:13)
+      at ClientRequest.EventEmitter.emit (domain.js:471:20)
+      at Socket.socketErrorListener (_http_client.js:402:9)
+      at Socket.emit (events.js:200:13)
+      at Socket.EventEmitter.emit (domain.js:471:20)
+      at emitErrorNT (internal/streams/destroy.js:91:8)
+      at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+      at processTicksAndRejections (internal/process/task_queues.js:84:9) {
+    message: 'request to http://localhost:8888/book/index ' +
+      'failed, reason: connect ECONNREFUSED ' +
+      '127.0.0.1:8888',
+    type: 'system',
+    errno: 'ECONNREFUSED',
+    code: 'ECONNREFUSED'
+  }
+}
+[2019-12-30T14:23:49.147] [ERROR] cheese - {
+  code: 1,
+  message: '❎node-fetch请求数据失败',
+  data: FetchError: request to http://localhost:8888/book/index failed, reason: connect ECONNREFUSED 127.0.0.1:8888
+      at ClientRequest.<anonymous> (/Users/maigit/fe/squirrel/book-system/node-fe/node_modules/node-fetch/lib/index.js:1455:11)
+      at ClientRequest.emit (events.js:200:13)
+      at ClientRequest.EventEmitter.emit (domain.js:471:20)
+      at Socket.socketErrorListener (_http_client.js:402:9)
+      at Socket.emit (events.js:200:13)
+      at Socket.EventEmitter.emit (domain.js:471:20)
+      at emitErrorNT (internal/streams/destroy.js:91:8)
+      at emitErrorAndCloseNT (internal/streams/destroy.js:59:3)
+      at processTicksAndRejections (internal/process/task_queues.js:84:9) {
+    message: 'request to http://localhost:8888/book/index ' +
+      'failed, reason: connect ECONNREFUSED ' +
+      '127.0.0.1:8888',
+    type: 'system',
+    errno: 'ECONNREFUSED',
+    code: 'ECONNREFUSED'
+  }
+}
