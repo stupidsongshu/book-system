@@ -1,9 +1,9 @@
 const path = require('path')
 const glob = require('glob')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 const PostHtmlPlugin = require('./plugins/PostHtmlPlugin3')
 
-// const files = glob.sync('./src/web/views/*/entries/([a-zA-Z+-a-zA-Z+]).entry.js')
 const files = glob.sync(path.join(__dirname, './src/web/views/*/entries/*.entry.js'))
 console.log(files)
 
@@ -23,13 +23,13 @@ files.forEach(url => {
   }))
 })
 
-
 module.exports = {
   mode: 'development',
   entry: entries,
   output: {
     path: path.join(__dirname, 'dist/assets'),
-    filename: '[name].bundle.js'
+    filename: '[name].bundle.js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -45,6 +45,10 @@ module.exports = {
   },
   plugins: [
     ...htmlPlugins,
-    new PostHtmlPlugin()
+    new PostHtmlPlugin(),
+    new CopyPlugin([
+      { from: path.join(__dirname, './src/web/views/layouts'), to: '../views/layouts' },
+      { from: path.join(__dirname, './src/web/components'), to: '../components' },
+    ])
   ]
 }

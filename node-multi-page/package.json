@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "NODE_ENV=development nodemon -w server --exec \"babel-node src/server/app.js --presets env\"",
-    "client:dev": "rm -rf dist && webpack"
+    "client:build": "rm -rf dist && webpack && cp -r src/server/* dist",
+    "node:dev": "NODE_ENV=development nodemon -w server --exec \"babel-node dist/app.js --presets env\""
   },
   "keywords": [],
   "author": "",
@@ -26,9 +27,11 @@
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.0",
     "glob": "^7.1.6",
     "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^2.0.2",
     "style-loader": "^1.1.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"

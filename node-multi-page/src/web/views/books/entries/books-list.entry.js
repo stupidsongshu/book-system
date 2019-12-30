@@ -1,4 +1,4 @@
-import Banner from '../../components/banner/index'
+import Banner from '../../../components/banner/index'
 
 Banner.init()
 
