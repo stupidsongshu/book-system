@@ -3,6 +3,8 @@ const glob = require('glob')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+const argv = require('yargs').argv
+const merge = require('webpack-merge')
 const PostHtmlPlugin = require('./plugins/PostHtmlPlugin3')
 
 const files = glob.sync(path.join(__dirname, './src/web/views/*/entries/*.entry.js'))
@@ -21,15 +23,24 @@ files.forEach(url => {
     filename: `../views/${dirName}/pages/${pageName}.html`,
     inject: false, // 关闭静态资源 js/css 注入，使用自定义plugin指定 script/link 的插入位置
     chunks: [entryName],
+    minify: {
+      collapseWhitespace: true,
+      removeAttributeQuotes: true,
+      removeComments: false
+    }
   }))
 })
 
-module.exports = {
-  mode: 'development',
+const mode = argv.mode
+console.log('webpack编译环境：', mode)
+const envConfig = require(`./webpack.${mode}.js`)
+
+const baseConfig = {
+  mode,
   entry: entries,
   output: {
     path: path.join(__dirname, 'dist/assets'),
-    filename: '[name].bundle.js',
+    filename: 'js/[name].bundle.js',
     publicPath: '/'
   },
   module: {
@@ -59,15 +70,13 @@ module.exports = {
   plugins: [
     ...htmlPlugins,
     new PostHtmlPlugin(),
-    new CopyPlugin([
-      { from: path.join(__dirname, './src/web/views/layouts'), to: '../views/layouts' },
-      { from: path.join(__dirname, './src/web/components'), to: '../components' },
-    ]),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: '[name].css',
+      filename: 'styles/[name].css',
       // chunkFilename: '[id].css',
     })
   ]
 }
+
+module.exports = merge(baseConfig, envConfig)
