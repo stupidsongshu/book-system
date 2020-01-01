@@ -27,6 +27,11 @@ function serverProd() {
       // @babel/plugin-transform-modules-commonjs: This plugin transforms ES2015 modules to CommonJS.
       plugins: ['@babel/plugin-transform-modules-commonjs']
     }))
+    .pipe(dest('dist'))
+}
+
+function cleanConfig() {
+  return src(entries)
     // transform the files here.
     .pipe(rollup({
       // any option supported by Rollup can be set here.
@@ -45,10 +50,10 @@ switch(NODE_ENV) {
     build = series(serverDev)
     break
   case 'production':
-    build = series(serverProd)
+    build = series(serverProd, cleanConfig)
     break
   default:
-    build = series(serverProd)
+    build = series(serverProd, cleanConfig)
     break
 }
 exports.default = build

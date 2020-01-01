@@ -14,6 +14,7 @@
     "serverBuild:prod": "scripty",
     "prebuild": "rm -rf ./dist",
     "build:dev": "rm -rf ./dist && npm run clientBuild:dev && npm run serverBuild:dev",
+    "build:prod": "rm -rf ./dist && npm run clientBuild:prod && npm run serverBuild:prod",
     "serve": "node ./dist/app.js"
   },
   "keywords": [],

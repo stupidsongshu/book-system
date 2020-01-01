@@ -1,7 +1,7 @@
 const path = require('path')
 const _ = require('lodash')
 
-const config = {
+let config = {
   port: 8080,
   baseUrl: 'http://localhost:8888/',
   // staticDir: path.join(__dirname, '../../assets'),
@@ -15,12 +15,12 @@ if (false) { // will be removed by gulp-rollup in production build
 }
 
 if (process.env.NODE_ENV === 'development') { // will be removed by @rollup/plugin-replace in production build
-  let localConfig = {
+  const localConfig = {
     port: 8080,
   }
   config = _.extend(config, localConfig)
 } else if (process.env.NODE_ENV === 'production') {
-  let prodConfig = {
+  const prodConfig = {
     port: 80,
   }
   config = _.extend(config, prodConfig)
