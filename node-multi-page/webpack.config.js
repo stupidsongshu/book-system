@@ -2,11 +2,16 @@ const path = require('path')
 const glob = require('glob')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CopyPlugin = require('copy-webpack-plugin')
 const argv = require('yargs').argv
 const merge = require('webpack-merge')
+const colors = require('colors')
 const PostHtmlPlugin = require('./plugins/PostHtmlPlugin3')
 
+const mode = argv.mode
+console.log(colors.cyan('webpack编译环境：'), colors.yellow(mode))
+const envConfig = require(`./webpack.${mode}.js`)
+
+// 多页配置 start
 const files = glob.sync(path.join(__dirname, './src/web/views/*/entries/*.entry.js'))
 console.log(files)
 
@@ -30,10 +35,7 @@ files.forEach(url => {
     }
   }))
 })
-
-const mode = argv.mode
-console.log('webpack编译环境：', mode)
-const envConfig = require(`./webpack.${mode}.js`)
+// 多页配置 end
 
 const baseConfig = {
   mode,

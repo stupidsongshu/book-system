@@ -1,6 +1,8 @@
-# BFC
-- Node.js + Swig + Webpack 多页应用
-- 编写自定义webpack plugin插入js位置
+# 服务器端多页面渲染应用
+- Node.js + Swig + Webpack + Gulp
+- 编写自定义 webpack plugin 指定js插入位置
+- Webpack 打包前端
+- Gulp 打包后端
 
 ## Swig
 - [Swig template engine](https://node-swig.github.io/swig-templates/)
