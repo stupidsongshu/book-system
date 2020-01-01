@@ -38,7 +38,6 @@
     "@rollup/plugin-replace": "^2.3.0",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.6",
-    "babel-preset-env": "^1.7.0",
     "colors": "^1.4.0",
     "copy-webpack-plugin": "^5.1.1",
     "cross-env": "^6.0.3",
