@@ -6,3 +6,4 @@
 
 ## Swig
 - [Swig template engine](https://node-swig.github.io/swig-templates/)
+- [Swig npm](https://www.npmjs.com/package/swig-templates)
