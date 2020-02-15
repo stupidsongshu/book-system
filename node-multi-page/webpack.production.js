@@ -41,6 +41,16 @@ module.exports = {
           })
         },
       },
+      {
+        from: path.join(__dirname, './src/web/views/index.html'),
+        to: '../views/index.html',
+        transform(content, path) {
+          return minify(content.toString(), {
+            collapseWhitespace: true,
+            removeAttributeQuotes: true
+          })
+        },
+      },
     ]),
   ]
 }
