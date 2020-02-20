@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}My Site{% endblock %}</title>
+
+  {% block head %}
+  <!-- <link rel="stylesheet" href="main.css"> -->
+  {% endblock %}
+
+  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  {% block styles %}{% endblock %}
+</head>
+<body>
+  {% include '../../components/banner/index.html' %}
+
+  <div id="pjax-container">
+    {% block content %}{% endblock %}
+  </div>
+
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+  <script>$(document).pjax('[data-pjax]', '#pjax-container');</script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

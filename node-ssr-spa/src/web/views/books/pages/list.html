@@ -1,0 +1,33 @@
+{% extends '../../layouts/layout.html' %}
+
+
+{% block styles %}<!-- injectcss -->{% endblock %}
+
+
+{% block content %}
+<div id="books-list-content">
+  <table class="table table-bordered table-striped table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">图书名称</th>
+        <th scope="col">作者</th>
+        <th scope="col">操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in data %}
+        <tr>
+          <td>{{item.id}}</td>
+          <td>{{item.name}}</td>
+          <td>{{item.author}}</td>
+          <td><button class="btn-action">修改</button></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}
+
+
+{% block scripts %}<!-- injectjs -->{% endblock %}
