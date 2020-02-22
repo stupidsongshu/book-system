@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bigpipe</title>
+</head>
+<body>
+  <h2>bigpipe 分块传输</h2>
+  <h3>Transfer-Encoding: chunked</h3>
+  <section id="section-banner">
+    banner loading...
+  </section>
+  <section id="section-content">
+    content loading...
+  </section>
+
+  <script>
+    function load(selector, content) {
+      document.querySelector(selector).textContent = content
+    }
+  </script>
+</body>
+</html>

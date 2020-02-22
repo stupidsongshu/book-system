@@ -5,9 +5,18 @@
 - Webpack 打包前端
 - Gulp 打包后端
 
+## 项目本地开发
+- 打包编译前端，使用webpack进行监听：npm run build:dev
+- 打包编译后端，使用gulp进行监听：npm run serverBuild:start
+- 使用nodemon启动服务并监听整个项目
+
 ## Swig
 - [Swig template engine](https://node-swig.github.io/swig-templates/)
 - [Swig npm](https://www.npmjs.com/package/swig-templates)
 
 ## pjax
 - [pjax](https://github.com/defunkt/jquery-pjax)
+
+## 性能优化
+### bigpipe
+- 流 + 分块传输 (例子：BooksController.actionList)
