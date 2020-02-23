@@ -14,9 +14,12 @@
 - [Swig template engine](https://node-swig.github.io/swig-templates/)
 - [Swig npm](https://www.npmjs.com/package/swig-templates)
 
-## pjax
+## 性能优化
+### pjax
 - [pjax](https://github.com/defunkt/jquery-pjax)
 
-## 性能优化
 ### bigpipe
 - 流 + 分块传输 (例子：BooksController.actionList)
+
+### quicklink
+- [Faster subsequent page-loads by prefetching in-viewport links during idle time](https://github.com/GoogleChromeLabs/quicklink)
